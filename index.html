@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Personal Portfolio</title>
+    </head>
+
+    <body class="container">
+
+        <div class="main">
+            
+            <input type="radio" name="tabs" id="home" checked="checked">
+            <input type="radio" name="tabs" id="about">
+            <input type="radio" name="tabs" id="portfolio">
+            <nav class="navBar">
+                <h2 class="logo"><span class="firstLetter">O</span>lwethu<span class="firstLetter">M</span>agwala</h2>
+                <ul class="webTabs">
+                    <li><label for="home" class="home">Home</label> </li>
+                    <li><label for="about" class="about">About Me</label></li>
+                    <li><label for="portfolio" class="portfolio">Portfolio</label></li>
+                </ul>
+                <div class="menuBars">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+
+            <section class="tabContent">
+                <div class="Tab homeTab">
+                    <h2>Personal<span> Portfolio</span></h2>
+                    <h4>Hello,</h4>
+                    <p>I am Olwethu Magwala and this is my personal web portfolio. I created this portfolio to <br>showcase my ability
+                        to develop a website and other innovative projects. I will also upload<br> some of the projects I will be
+                        working on in this portfolio to show my skills in web development 
+                    <br>and provide their GitHub links.</p>
+                        <div class="documents">
+                            <h4>My Documents:</h4> 
+                            <ul>
+                                <li><a href="Documents/Resume.docx" target="_blank" download>Download Resume</a></li>
+                                <li><a href="Documents/A+.pdf" target="_blank" download>A+ Certificate</a></li>
+                                <li><a href="Documents/ComputerSkills.pdf" target="_blank" download>Computer Skills</a></li>
+                                <li><a href="Documents/Bachelor'sDegree.pdf" target="_blank" download>Academic Transcript</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="picture">
+                    <img src="images/IMG_20211220_180153_869.JPG" id="Olwethu" loading="lazy" class="Tab homeTab" height="450px" width="350px">
+                </div>
+
+                <div class="Tab aboutMe">
+                    <h2>About <span>Me</span></h2>
+                    <div class="academicCont">
+                        <h3 id="hist">Academic History</h3>
+                        <p>In my academic journey, I have always dealt with computer related courses at a tertiary level. 
+                            I took a short Computer Technician (CompTIA A+) course at Boston City Campus,
+                             so I could have the ability to work with the hardware of computers 
+                             and understand its components. 
+                             I also did a computer skills course where I got to learn how to work with Microsoft Office and finally, at Rhodes University, where I studied Computer Science. I found programming intriguing and a very useful skill for me to have.
+                              Java, C++ and Python are among the languages we were taught, including Web Development. </p>
+                    </div>
+                    <div class="skillsCont">
+                        <h3 id="skill">Skills</h3>
+                        <ul>
+                            <li>Programming</li>
+                            <li>Web Development</li>
+                            <li>Problem Solving</li>
+                            <li>Microsoft Office</li>
+                            <li>Hardware and Software Troubleshooting</li>
+                            <li>Version Control</li>
+                            <li>Team Collaboration</li>
+                            <li>Database Management (SQL, PostgreSQL)</li>
+                        </ul>
+                    </div>
+                    <div class="myselfCont">
+                        <h3 class="myself">More About Me</h3>
+                        <p>I hold a Bachelor of Arts degree in Computer Science from Rhodes University. I am currently unemployed but I am working 
+                            on side projects to get a bit of practical experience and most importantly apply the skills and the knowledge I gained in my academic journey. A Tic Tac Toe game and a Weather Web application are 
+                            the 2 projects I have worked on so far. I am always willing and eager to learn something new as the tech industry is always evolving and that will provide an
+                            opportunity for career growth. 
+                            Currently, I am learning how to work with React, my aim is to always learn and contribute to new projects, that will also help me evolve as a professional
+                            and adapt to different to various environments.
+                        </p>
+                    </div>
+                </div>
+                <div class="Tab portfolioTab">
+                    <h2 class="projects">My <span>Projects</span></h2>
+                    <div class="apps">
+                        <div class="card">
+                            <a href="https://www.facebook.com" target="_blank"><img src="images\Screenshot (31).png" loading="lazy" id="Tic" alt="TicTac"></a>
+                            <div class="info">
+                                <h3 class="gameName">Tic Tac Toe</h3>
+                                <p>I developed this Tic Tac Toe game using HTML, CSS and implemented its functionality
+                                    with JavaScript. It is a 2 player game which has a hover effect that shows whose turn 
+                                    it is to play. Once the game is finished either via a win or a draw, a restart button pops up,
+                                    which resets the game.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="https://www.facebook.com" target="_blank"><img src="images\Forecast.png" loading="lazy" id="Tic" alt="TicTac"></a>
+                            <div class="info">
+                                <h3 class="gameName">Weather App</h3>
+                                <p>I developed this weather app using HTML, CSS and JavaScript. CSS was used mainly to implement the style 
+                                    of the app, the functionality is implemented with JavaScript. I used a weather API to be able to access 
+                                    the locations that can be found through the search button. The app also shows the details of the weather condition
+                                    such as the humidity, wind speed and cloud cover. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/olwethu-magwala-b75880261" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <address><i class="fa-solid fa-envelope"></i> omagwala19@gmail.com</address>
+        </div>
+        
+        <p>© 2024 Olwethu Magwala. All rights reserved.
+        </p>
+    </footer>
+        <script src="https://kit.fontawesome.com/612181c53f.js" crossorigin="anonymous"></script>
+        <script src="hamburgerMenu.js"></script>
+    </body>
+</html>

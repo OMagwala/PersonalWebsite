@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    background-color: rgb(27, 27, 27);
+    color: whitesmoke;
+}
+
+.logo {
+    color: rgb(163, 163, 163);
+}
+
+.firstLetter {
+    color: rgb(2, 206, 2);
+    font-size: larger;
+}
+
+.menuBars {
+    display: none;
+    cursor: pointer;
+}
+
+.navBar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    background-color: rgb(59, 59, 59);
+    padding: .7rem 5%;
+}
+
+.line {
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(163, 163, 163);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.webTabs {
+    margin-left: 48%;
+}
+
+#home:checked ~ nav label.home,
+#about:checked ~ nav label.about,
+#portfolio:checked ~ nav label.portfolio {
+    color: rgb(6, 224, 6);
+    transition: 0.4s ease;
+}
+
+section .Tab {
+    display: none;
+}
+
+#home:checked ~ section .homeTab {
+    display: block;
+    margin-top: 110px;
+}
+
+#about:checked ~ section .aboutMe {
+    display: block;
+    margin-top: 35px;
+}
+
+#portfolio:checked ~ section .portfolioTab {
+    display: block;
+    margin-top: 70px;
+}
+
+.navBar ul li {
+    list-style-type: none;
+    display: inline-block; 
+}
+
+.navBar ul li label {
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 0;
+    color: rgb(163, 163, 163);
+}
+
+.navBar ul li label:hover {
+    color: rgb(3, 126, 3);
+    transition: 0.5s ease;
+}
+
+
+.tabContent {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+}
+
+.homeTab h2 {
+    font-size: 25px;
+    line-height: 55px;
+    color: rgb(163, 163, 163);
+}
+
+.homeTab h4 {
+    line-height: 40px;
+    font-size: 20px;
+}
+.homeTab span {
+    color: rgb(2, 206, 2);
+}
+
+.homeTab p {
+    line-height: 25px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.aboutMe {
+    content: "";
+    display: table-caption;
+    clear: both;
+}
+
+.aboutMe h2 {
+    line-height: 100px;
+    color: rgb(163, 163, 163);
+    font-size: 25px;
+    text-align: center;
+}
+
+.aboutMe span {
+    color: rgb(2, 206, 2);
+}
+
+.aboutMe div {
+    float: left;
+    width: 23%;
+    padding: 10px 10px;
+    margin-left: 6%;
+}
+
+.aboutMe ul {
+    padding-left: 12px;
+}
+
+.aboutMe h3 {
+    line-height: 29px;
+    color: rgb(134, 133, 133);
+}
+
+.academicCont {
+    background-color: rgb(49, 48, 49, 0.5);
+    border-radius: 20px;
+    text-align: left;
+    line-height: 26px;
+}
+
+.portfolioTab h2 {
+    color: rgb(163, 163, 163);
+    font-size: 25px;
+
+}
+
+.portfolioTab span {
+    color:  rgb(2, 206, 2);
+}
+
+.skillsCont {
+    background-color: rgb(49, 48, 49, 0.5);
+    border-radius: 20px;
+    line-height: 28px;
+}
+
+.myselfCont {
+    background-color: rgb(49, 48, 49, 0.5);
+    border-radius: 20px;
+    text-align: left;
+    line-height: 28px;
+}
+
+.skillsCont #skill, .myselfCont .myself, .academicCont #hist {
+    text-align: center;
+}
+
+.documents {
+    line-height: 34px;
+    list-style: none;
+}
+
+.documents h4 {
+    color: rgb(163, 163, 163);
+    font-size: 19px;
+}
+
+.documents ul li { 
+    list-style: none;
+    display: inline-block;  
+    margin: 2px 5px;
+}
+
+.documents ul li a {
+    text-decoration: none;
+    font-size: large;
+    background-color: rgb(14, 226, 25);
+    border-radius: 10px;
+    padding: 4px;
+    color: rgb(5, 49, 3);
+    line-height: 20px;
+}
+
+.documents ul li a:hover {
+    background-color: transparent;
+    border: 1px solid rgb(14, 226, 25);
+    color: rgb(14, 226, 25);
+    transition: 0.2s ease;
+}
+
+#Olwethu {
+    margin-top: 15px;
+    border-radius: 49%;
+    padding-left: 6px;
+}
+
+.projects {
+    text-align: center;
+}
+
+#Tic {
+    height: 250px;
+    border-radius: 4px;
+    width: 400px;
+    opacity: 1;
+}
+
+.apps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.card {
+    height: 250px;
+    margin: 50px;
+    overflow: hidden;
+    background: transparent;
+}
+
+.info {
+    height: 190px;
+    width: 400px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    color: rgb(163, 163, 163);
+    bottom: 250px;
+    transition: 0.3s;
+}
+
+.gameName {
+    margin: 3px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.info p {
+    font-size: 12px;
+    margin: 4px;
+    visibility: hidden;
+    opacity: 0;
+    font-family: 'Lucida Sans Unicode';
+}
+
+.card:hover .info {
+    height: 150px;
+    bottom: 225px;
+    background: rgba(7, 7, 7, 0.5);
+    color: white;
+}
+
+.card:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+.appName {
+    background: rgb(27, 27, 27);
+    color: rgb(124, 124, 124);
+}
+
+footer {
+    background-color: rgb(27, 27, 27);
+    color: rgb(124, 124, 124);
+    text-align: left;
+    padding: 1rem 0;
+    margin-left: 5%;
+}
+
+footer .social-links {
+    margin-bottom: 10px;
+}
+
+footer .social-links a {
+    color: rgb(2, 206, 2);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    font-style: 'Trebuchet MS';
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+/*Footer Style*/
+.social-links {
+    display: flex;
+    gap: 2px;
+}
+
+.social-links a {
+    color: rgb(2, 206, 2);
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+    color: rgb(6, 224, 6);
+}
+
+.rights {
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+/* Font Awesome Icon Styling */
+.social-links i {
+    font-size: 18px;
+}
+
+/* Responsive Design */
+
+@media screen and (min-width: 901px) and (max-width: 1100px) {
+    .webTabs {
+        margin-left: 385px;
+        margin-right: auto;
+    }
+    .tabContent {
+        margin: 20px;
+        padding: 0 20px;
+    }
+    .navBar {
+        padding: 1rem 25px;
+    }
+    .card {
+        margin: 30px;
+        background: transparent;
+    }
+    .card:hover .info {
+        background: rgba(7, 7, 7, 0.5);
+        height: 150px;
+        bottom: 193px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+/* Work from here */
+    .webTabs {
+        margin-left: 238px;
+    }
+    .navBar {
+        flex-direction: row;
+        align-items: center;
+        font-size: medium;
+    }
+
+    #home:checked ~ section .homeTab,
+    #portfolio:checked ~ section .portfolioTab {
+        margin-top:100px;
+    }
+
+    .tabContent {
+        margin: 15px;
+        padding: 0 15px;
+    }
+
+    .card {
+        margin: 25px;
+        background: transparent;
+    }
+
+    .info {
+        height: 190px;
+        font-size: 15px;
+    }
+
+    .info p {
+        font-size: 13px;
+        padding: 5px;
+    }
+
+    .card:hover .info {
+        background: rgba(7, 7, 7, 0.5);
+        height: 187px;
+    }
+}
+
+@media screen and (min-width: 765px) and (max-width: 899px) {
+    .card {
+        margin: 3px 8px;
+        background: transparent;
+        flex-direction: column;
+        width: 350px;
+    }
+
+    .info {
+        height: 210px;
+        font-size: 15px;
+        width: 300px;
+        overflow: hidden;
+    }
+
+    .info p {
+        font-size: 13px;
+    }
+
+    .card:hover .info {
+        background: rgba(7, 7, 7, 0.5);
+        height: 210px;
+        width: 350px;
+        transition: 0.2s;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: medium;
+    }
+
+    .documents ul li a {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .tabContent {
+        margin: 10px;
+        padding: 0 15px;
+    }
+    .navBar {
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem 5%;
+        font-size: medium;
+    }
+
+    #Olwethu {
+        height: 390px;
+        width: 300px;
+    }
+
+    .aboutMe div {
+        width: 70%;
+        margin-bottom: 35px;
+    }
+
+    .apps {
+        flex-direction: column;
+        align-items: center;
+        height: 450px;
+    }
+
+    /* Adjustments for content visibility */
+    #home:checked ~ section .homeTab,
+    #portfolio:checked ~ section .portfolioTab {
+        margin-top:100px;
+    }
+
+    .card {
+        margin: 20px;
+        overflow: hidden;
+        height: 400px;
+        align-items: center;
+    }
+
+    #Tic {
+        height: 190px;
+    }
+
+    .card:hover .info, .gameName {
+        display: none;
+    }
+
+    .menuBars {
+        display: block;
+        margin-left: 50%;
+    }
+
+    .menuBars.active .line:nth-child(2) {
+        opacity: 0;
+    }
+    .menuBars.active .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menuBars.active .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .webTabs {
+        position: absolute;
+        top: 65px;
+        background-color:rgb(59, 59, 59);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 110%;
+        text-align: center;
+        left: -200%;
+        padding: 15px 10px;
+        transition: 0.4s;
+    }
+
+    .webTabs.active {
+        left: -45%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .documents ul li a {
+        font-size: smaller;
+    }
+}
