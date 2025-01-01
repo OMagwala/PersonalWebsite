@@ -544,7 +544,8 @@ footer .social-links a:hover {
     }
 
     .webTabs.active {
-        left: -45%;
+        top: 50px;
+        left: -55%;
     }
 
     .documents {
@@ -600,7 +601,7 @@ footer .social-links a:hover {
     }
 
     .webTabs.active {
-        left: -80%;
+        left: -70%;
         top: 50px;
     }
 
