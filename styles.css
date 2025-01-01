@@ -385,7 +385,6 @@ footer .social-links a:hover {
 
 @media screen and (max-width: 900px) {
 
-/* Work from here */
     .webTabs {
         margin-left: 238px;
     }
@@ -456,6 +455,10 @@ footer .social-links a:hover {
 @media only screen and (max-width: 768px) {
     html {
         font-size: medium;
+    }
+
+    .logo {
+        font-size: large;
     }
 
     .documents ul li a {
@@ -543,10 +546,65 @@ footer .social-links a:hover {
     .webTabs.active {
         left: -45%;
     }
+
+    .documents {
+        display: flex;
+        flex-direction: column;
+        font-size: small;
+        margin-right: -50%;
+    }
+
+    .documents ul li a {
+        font-size: small;
+        font-weight: bold;
+        margin-top: 2%;
+    }
+
+    .homeTab p {
+        font-size: .9rem;
+    }
+
+    .picture {
+        margin-bottom: 50%;
+    }
+
+    .aboutMe .academicCont, .skillsCont, .myselfCont {
+        font-size: .9rem;
+    }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 300px) and (max-width: 660px) {
     .documents ul li a {
         font-size: smaller;
+    }
+
+    .documents ul li {
+        display: flex;
+        flex-direction: row;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .logo {
+        font-size: medium;
+        margin-right: -10%;
+        margin-left: -5%;
+    }
+
+    .menuBars {
+        display: block;
+        margin-right: -500px;
+        font-size: small;
+    }
+
+    .webTabs.active {
+        left: -80%;
+        top: 50px;
+    }
+
+    .container {
+        font-size: small;
     }
 }
