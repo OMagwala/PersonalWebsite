@@ -382,14 +382,16 @@ footer .social-links a:hover {
         padding: 0 20px;
     }
 
+    .gameName {
+        display: none;
+    }
+
     .card {
         margin: 30px;
         background: transparent;
     }
     .card:hover .info {
-        background: rgba(7, 7, 7, 0.5);
-        height: 200px;
-        bottom: 200px;
+        display: none;
     }
 }
 
@@ -410,19 +412,11 @@ footer .social-links a:hover {
         background: transparent;
     }
 
-    .info {
-        height: 190px;
-        font-size: 15px;
-    }
-
-    .info p {
-        font-size: 13px;
-        padding: 5px;
-    }
-
     .card:hover .info {
-        background: rgba(7, 7, 7, 0.5);
-        height: 180px;
+        display: none;
+    }
+    .gameName {
+        display: none;
     }
 }
 
@@ -434,23 +428,6 @@ footer .social-links a:hover {
         width: 350px;
     }
 
-    .info {
-        height: 210px;
-        font-size: 15px;
-        width: 300px;
-        overflow: hidden;
-    }
-
-    .info p {
-        font-size: 13px;
-    }
-
-    .card:hover .info {
-        background: rgba(7, 7, 7, 0.5);
-        height: 210px;
-        width: 350px;
-        transition: 0.2s;
-    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -494,20 +471,26 @@ footer .social-links a:hover {
     }
 
     .card {
-        margin: 20px;
+        margin: 15px;
         overflow: hidden;
         height: 400px;
         align-items: center;
+        justify-content: space-around;
     }
 
     #Tic {
-        height: 190px;
+        height: 195px;
     }
 
     .card:hover .info, .gameName {
+        right: -100%;
         display: none;
     }
 
+    .info {
+        right: -100%;
+        display: none;
+    }
     .menuBars {
         display: block;
         padding: 3px 20px;
